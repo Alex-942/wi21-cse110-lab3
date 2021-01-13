@@ -1,1 +1,237 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Alejandro Marquez's Personal Website</title>
+        <meta charset="utf-8"> 
+        <link href="dummy.css" rel="stylesheet">
+    </head>
+    <body>
+        <main id="primary">
+            <header>
+                <h1>Welcome to Alejandro Marquez's Personal Website</h1>
+            </header>
+            <h3>Hello There!!! [Hats off to you if you understand the reference :) ]</h3>
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Alejandro Marquez and I am currently attending <b class="keywords">University of California - San Diego </b> (UCSD). <br>
+                    I am currently on my third year at the university and I plan on graduating June 2022.
+                </p>
+                <aside>
+                    <p>Within UCSD there are <em>six colleges</em>: Warren, Muir, Revelle, ERC, Marshall, and Sixth.<br>
+                        I am attending <strong>Warren College</strong>.
+                    </p>
+                </aside>
+                <p>At UCSD I am working towards obtaining a bachelor's degree in <i>Computer Science</i>.<br>
+                    Thus far into my academic carrer at UCSD I have learned so much it's astonishing.<br>
+                    The secret to doing well in your classes <span class="secret"> will be displayed here when I figure it out.</span>
+                </p>
 
+                <hr>
+
+                <p>But more seriously if you put in the hard work and study while maintaing your social life, you'll be in good shape</p>
+
+                <div>
+                    <h2>Here are some fun facts about me!</h2>
+                    <p>Or as a CS Major would say: <code>ls fun-facts</code></p>
+
+                    <p>I enjoy myself by participating in the following hobbies.</p>
+                    <ul>
+                        <li>Watching TV, Youtube, Twitch</li>
+                        <li>Working Out</li>
+                        <li>Coding (Top 3 favorite coding languages)
+                          <ol>
+                            <li>Java</li>
+                            <li>C++</li>
+                            <li>Python</li>
+                          </ol>
+                        </li>
+                    </ul>
+                </div>
+                <pre>
+                    When building a site <i>Use the i tag to give your text some style in html</i>
+                </pre>
+
+                <p>This is one of mmy favortie images:</p>
+                <figure>
+                    <img src="https://octodex.github.com/images/yaktocat.png"
+                         alt="Cool Cat pic.">
+                    <figcaption>Cool Cat picture</figcaption>
+                </figure>
+                <p>Here's the same image since I like it alot</p>
+                <picture>
+                    <source srcset="cool-cat.png" media="(min-width: 150px)">
+                    <img src="https://octodex.github.com/images/yaktocat.png"
+                    alt="Same Pic as Above.">
+                </picture>
+                    
+                <iframe id="iframe"
+                    title="Embeded map of London, England"
+                    width="200"
+                    height="200"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+                </iframe>
+
+                <p>Here's audio of a horse neigh</p>
+                <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="horse.mp3" type="audio/mpeg">
+                    Hopefully you can hear it.
+                </audio>
+
+                <p>Here's a video of a bear</p>
+                <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                     Hopefully you can see it.
+                </video>
+
+                <p>Here is my favorite color</p>
+                <canvas width="300" height="300">
+                    const canvas = document.querySelector('canvas');
+                    const ctx = canvas.getContext('2d');
+                    ctx.fillStyle = 'blue';
+                    ctx.fillRect(10, 10, 100, 100);
+                </canvas>
+
+                <p>Here's a nice picture</p>
+                <svg viewBox="0 0 10 10" x="200" width="100">
+                    <circle cx="50" cy="50" r="50" />
+                </svg>
+
+                <p>I am having a raffle for a 10$ amazon gift card. Fill out the boxes below to enter</p>
+                <form>
+                    <input type="reset" value="Reset">
+
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="number">Enter Phone Number: </label>
+                    <input type="number" name="number" id="number">
+
+                    <label for="key">Enter a security key: </label>
+                    <input type="password" name="key" id="key">
+
+                    <label for="date">Enter current date: </label>
+                    <input type="date" name="date" id="date" value="2021-01-01" min="2021-01-01" max="2022-01-01">
+
+                    <label for="month">Enter current month: </label>
+                    <input type="month" name="month" id="month" min="2021-01" value="2021-01">
+
+                    <label for="time">Enter the time of submission:</label>
+                    <input type="time" id="time" name="time" min="00:00" max="23:59" required>
+
+                    <input type="submit" value="Enter Raffle!">
+                </form>
+                <p>Choose you favorite baseball team</p>
+                <label for="team-select">Choose a team:</label>
+                <select id="team-select">
+                    <optgroup label="Baseball Teams">
+                        <option>Los Angeles Dodgers</option>
+                        <option>Los Angeles Angeles</option>
+                        <option>San Francisco Giants</option>
+                        <option>Oakland A's</option>
+                    </optgroup>
+                </select>
+
+                <form>
+                    <fieldset>
+                      <legend>Choose your favorite player</legend>
+                  
+                      <input type="radio" id="Kershaw" name="player">
+                      <label for="Kershaw">Clayton Kershaw</label><br/>
+                  
+                      <input type="radio" id="Betts" name="player">
+                      <label for="Betts">Mookie Betts</label><br/>
+                  
+                      <input type="radio" id="Seager" name="player">
+                      <label for="Seager">Corey Seager</label>
+                    </fieldset>
+                </form>
+
+                <textarea id="story" name="story" rows="5" cols="33">
+                    I like salad!
+                </textarea>
+
+                <label for="Mycharacters">Choose your Favorite Chracter:</label>
+                <input list="characters" id="Mycharacters" name="Mycharacters" />
+                <datalist id="characters">
+                    <option value="Link">
+                    <option value="Mario">
+                    <option value="Pikachu">
+                    <option value="Kirby">
+                </datalist>
+
+                <table>
+                    <caption>Empty Todo-List</caption>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Todo List</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Accomplished</td>
+                            <td>Work in Progress</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <caption>Empty table</caption>
+                    <colgroup>
+                        <col>
+                        <col style="background-color:red">
+                        <col style="background-color:blue">
+                    </colgroup>
+                    <tr>
+                        <th></th>
+                        <th>Release Year</th>
+                        <th>Still widely used?</th>
+                      </tr>
+                      <tr>
+                        <td>Java</td>
+                        <td>1995</td>
+                        <td>Yes</td>
+                      </tr>
+                      <tr>
+                        <td>Python</td>
+                        <td>1991</td>
+                        <td>Yes</td>
+                      </tr>
+                </table>
+
+            </section>
+
+            <div id="container"></div>
+            <template id="template">
+                <div>I do nothing. Ignore me</div>
+            </template>
+
+            <button class="favorite styled"
+                type="button">
+                Press Me!
+            </button>
+
+            <details open>
+                <summary>I Hope you Enjoyed Your Stay</summary>
+                <p>Thank you so much for stopping by and checking out my site.</p>
+            </details>
+
+            <footer>
+                <p>Creator: Alejandro Marquez </p>
+                <p>Links to coding tutorials down below to potentially create your own website or other programs!</p>
+                <nav>
+                    <a href="/html/">HTML</a> |
+                    <a href="/css/">CSS</a> |
+                    <a href="/js/">JavaScript</a> |
+                    <a href="/python/">Python</a>
+                </nav>
+            </footer>
+        </main>
+    </body>
+
+
+</html>
