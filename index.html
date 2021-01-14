@@ -3,7 +3,7 @@
     <head>
         <title>Alejandro Marquez's Personal Website</title>
         <meta charset="utf-8"> 
-        <link href="dummy.css" rel="stylesheet">
+        <link href="https://Alex-942.github.io/CSE110-Lab2/style_format.css" rel="stylesheet">
     </head>
     <body>
         <main id="primary">
@@ -13,22 +13,20 @@
             <h3>Hello There!!! [Hats off to you if you understand the reference :) ]</h3>
             <section>
                 <h2>About Me</h2>
-                <p>My name is Alejandro Marquez and I am currently attending <b class="keywords">University of California - San Diego </b> (UCSD). <br>
-                    I am currently on my third year at the university and I plan on graduating June 2022.
+                <p>My name is Alejandro Marquez and I am currently attending <b class="keywords">University of California - San Diego </b> (UCSD). I am currently on my third year at the university and I plan on graduating June 2022. I chose to attend UCSD because of their strong Computer Science department. Additonally San Diego provided the best financial aid packages compared to other schools I applied to, so it made sense from a fiscal and educational standpoint. Additionally I love the city of San Diego since its away from my hometown (Los Angeles) and the weather is beautiful.
                 </p>
                 <aside>
                     <p>Within UCSD there are <em>six colleges</em>: Warren, Muir, Revelle, ERC, Marshall, and Sixth.<br>
                         I am attending <strong>Warren College</strong>.
                     </p>
                 </aside>
-                <p>At UCSD I am working towards obtaining a bachelor's degree in <i>Computer Science</i>.<br>
-                    Thus far into my academic carrer at UCSD I have learned so much it's astonishing.<br>
-                    The secret to doing well in your classes <span class="secret"> will be displayed here when I figure it out.</span>
+                <p>At UCSD I am working towards obtaining a bachelor's degree in <i>Computer Science</i>. Interestingly I did not enter UCSD as a computer science major. Instead I came in as undeclared and knew that I wanted to be a computer science major. So I decided to be a cognitive science major whilst taking the CS courses needed to transfer into my desired major. So when it was Spring 2020 I applied to transfer into the Computer Science major and I got in.<br>
+                    Thus far into my academic carrer at UCSD I have learned so much it's astonishing. The secret to doing well in your classes is: <span hidden> If you see this that means you're using dev tools. I baited you I dont know the secret. Let me know if you know though ;)</span>
                 </p>
 
-                <hr>
+                <p>LOL!!! But more seriously if you put in the hard work and study while maintaing your social life, you'll be in good shape</p>
 
-                <p>But more seriously if you put in the hard work and study while maintaing your social life, you'll be in good shape</p>
+                <hr>
 
                 <div>
                     <h2>Here are some fun facts about me!</h2>
@@ -51,7 +49,7 @@
                     When building a site <i>Use the i tag to give your text some style in html</i>
                 </pre>
 
-                <p>This is one of mmy favortie images:</p>
+                <p>This is one of my favortie images:</p>
                 <figure>
                     <img src="https://octodex.github.com/images/yaktocat.png"
                          alt="Cool Cat pic.">
@@ -59,44 +57,48 @@
                 </figure>
                 <p>Here's the same image since I like it alot</p>
                 <picture>
-                    <source srcset="cool-cat.png" media="(min-width: 150px)">
-                    <img src="https://octodex.github.com/images/yaktocat.png"
+                    <img src="https://octodex.github.com/images/scubatocat.png"
                     alt="Same Pic as Above.">
                 </picture>
-                    
+                <p><b>Another Cool Cat Pic!</b></p>
+                <br>
+                
+                <p>Here is some information about my university down below!</p>
                 <iframe id="iframe"
-                    title="Embeded map of London, England"
-                    width="200"
-                    height="200"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+                    title="UCSD site"
+                    width="400"
+                    height="400"
+                    src="https://ucsd.edu">
                 </iframe>
 
-                <p>Here's audio of a horse neigh</p>
+                <p>Here's audio of one of my favorite melodies</p>
                 <audio controls>
-                    <source src="horse.ogg" type="audio/ogg">
-                    <source src="horse.mp3" type="audio/mpeg">
+                    <source src="https://Alex-942.github.io/CSE110-Lab2/Kalimba.mp3" type="audio/mp3">
                     Hopefully you can hear it.
                 </audio>
 
-                <p>Here's a video of a bear</p>
+                <p>Here's one of my favorite videos</p>
                 <video width="320" height="240" controls>
-                    <source src="movie.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
+                    <source src="https://Alex-942.github.io/CSE110-Lab2/sample-mp4-file.mp4" type="video/mp4">
                      Hopefully you can see it.
                 </video>
 
                 <p>Here is my favorite color</p>
                 <canvas width="300" height="300">
+                    <script>
                     const canvas = document.querySelector('canvas');
                     const ctx = canvas.getContext('2d');
                     ctx.fillStyle = 'blue';
                     ctx.fillRect(10, 10, 100, 100);
+                    </script>
                 </canvas>
 
                 <p>Here's a nice picture</p>
                 <svg viewBox="0 0 10 10" x="200" width="100">
-                    <circle cx="50" cy="50" r="50" />
+                    <circle cx="50" cy="50" r="50" stroke="yellow" stroke-width="2" fill="blue"/>
                 </svg>
+
+                <hr>
 
                 <p>I am having a raffle for a 10$ amazon gift card. Fill out the boxes below to enter</p>
                 <form>
@@ -125,8 +127,11 @@
 
                     <input type="submit" value="Enter Raffle!">
                 </form>
-                <p>Choose you favorite baseball team</p>
-                <label for="team-select">Choose a team:</label>
+
+                <hr>
+
+            
+                <label for="team-select">Choose you favorite baseball team:</label>
                 <select id="team-select">
                     <optgroup label="Baseball Teams">
                         <option>Los Angeles Dodgers</option>
@@ -154,6 +159,8 @@
                 <textarea id="story" name="story" rows="5" cols="33">
                     I like salad!
                 </textarea>
+                
+                <br>
 
                 <label for="Mycharacters">Choose your Favorite Chracter:</label>
                 <input list="characters" id="Mycharacters" name="Mycharacters" />
@@ -164,27 +171,16 @@
                     <option value="Kirby">
                 </datalist>
 
-                <table>
-                    <caption>Empty Todo-List</caption>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Todo List</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Accomplished</td>
-                            <td>Work in Progress</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <br>
+
+                <br>
 
                 <table>
-                    <caption>Empty table</caption>
+                    <caption><b>Coding Languages Information</b></caption>
                     <colgroup>
-                        <col>
-                        <col style="background-color:red">
-                        <col style="background-color:blue">
+                        <col style="background-color:rgb(248, 148, 215)">
+                        <col style="background-color:rgb(255, 73, 73)">
+                        <col style="background-color:cyan">
                     </colgroup>
                     <tr>
                         <th></th>
@@ -202,6 +198,8 @@
                         <td>Yes</td>
                       </tr>
                 </table>
+                
+                <br>
 
             </section>
 
@@ -215,19 +213,21 @@
                 Press Me!
             </button>
 
+            <br>
+
             <details open>
-                <summary>I Hope you Enjoyed Your Stay</summary>
-                <p>Thank you so much for stopping by and checking out my site.</p>
+                <summary>A Note From the Creator</summary>
+                <p>Thank you so much for stopping by and checking out my site. I worked very hard on it so I hope you enjoyed your stay!</p>
             </details>
 
             <footer>
                 <p>Creator: Alejandro Marquez </p>
-                <p>Links to coding tutorials down below to potentially create your own website or other programs!</p>
+                <p><b>Links to coding tutorials down below to potentially create your own website or other programs!</b></p>
                 <nav>
-                    <a href="/html/">HTML</a> |
-                    <a href="/css/">CSS</a> |
-                    <a href="/js/">JavaScript</a> |
-                    <a href="/python/">Python</a>
+                    <a href="https://www.w3schools.com/html/">HTML</a> |
+                    <a href="https://www.w3schools.com/css/">CSS</a> |
+                    <a href="https://www.w3schools.com/js/DEFAULT.asp">JavaScript</a> |
+                    <a href="https://www.w3schools.com/python/">Python</a>
                 </nav>
             </footer>
         </main>
