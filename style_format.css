@@ -1,0 +1,122 @@
+.keywords{
+    color:gold;
+}
+
+#Kershaw{
+    color: royalblue;
+}
+
+*{
+    text-align: left; /* This will center all text on the webpage */
+}
+
+b {
+    color: rgb(255,0,0);
+    font-size: 2em;
+    position: relative;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: inline;
+    position: static;
+    font-family: 'Lora', serif;
+    /*
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: auto;
+    */
+}
+
+
+.flex-container{
+    flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: auto;
+}
+
+.grid-containter{
+
+}
+
+
+
+h1 {
+    font-size: 4rem;
+    margin: 10px 10px 10px 10px;
+    text-decoration: underline;
+    display: block;
+}
+
+a[href]{
+    color: #ee82ee;
+    font-size: 12pt;
+    display: inline-block;
+}
+
+a:hover{
+    color: greenyellow;
+    min-width: 100%;
+}
+
+a:active{
+    color:skyblue;
+}
+
+legend, caption{
+    color:black;
+    background-color: hsl(0,0%,58%);
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 5px;
+    margin: auto;
+
+
+}
+
+div p {
+    background-color: hsla(0,0%,58%, 1);
+    font-size: 100%;
+
+}
+
+main > header {
+    color: rgba(0,0,255,1);
+}
+figure + p {
+    color:salmon;
+    max-width: 100%;
+}
+ul ~ li {
+    background-color: #ff0;
+    height: 100px;
+    width: 100px;
+
+}
+
+img.border{
+    border-color: black;
+    border-radius: 10cm;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+body{
+    padding: 20px 20px 20px 20px;
+}
+
+@media screen and (min-width: 800px){
+    body{
+        background-color: burlywood;
+    }
+}
