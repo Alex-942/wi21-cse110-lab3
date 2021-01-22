@@ -1,5 +1,6 @@
-### Standup Notes Template
-|         |                              |                         Week: "date"                                                          |
+# Standup Notes Template
+
+### Week:                                                         
 | Person  | Question                     | Monday    | Tuesday    | Wednesday    | Thursday    | Friday      | Saturday    | Sunday      |
 | :----:  |  :----:                      |   ---:    |    ---:    |      ---:    |     ---:    |   ---:      |     ---:    |   ---:      |
 |         | What did you do yesterday?   |           |            |              |             |             |             |             |
