@@ -5,10 +5,38 @@
         <meta charset="utf-8"> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-        <link href="https://github.com/Alex-942/wi21-cse110-lab3/style_format.css" rel="stylesheet">
+        <link href="style_format.css" rel="stylesheet">
         <style>
             h1 {
                 background-color: beige;
+            }
+            .flex-container {
+                display: flex;
+                flex-flow: row wrap;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                background-color: skyblue;
+            }
+            .flex-container > div {
+                background-color: rgb(233, 230, 230);
+                margin: 5px;
+                padding: 10px;
+                font-size: 20px;
+            }
+            .grid-container{
+                display: grid;
+                grid-template-columns: 30px 30px 30px 30px;
+                grid-template-rows: 30px 30px 30px 30px;
+                column-gap: 5px;
+                row-gap: 5px;
+                background-color: cyan;
+            }
+            .grid-item{
+                background-color: rgb(207, 204, 204);
+                border: 1px solid black;
+                padding: 10px;
+                font-size: 20px;
+                text-align: center;
             }
         </style>
     </head>
@@ -243,6 +271,17 @@
                 </nav>
             </footer>
         </main>
+        <div class="flex-container">
+            <div>Thanks</div>
+            <div>For</div>
+            <div>Coming</div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">B</div>
+            <div class="grid-item">Y</div>
+            <div class="grid-item">E</div>
+        </div>
     </body>
 
 

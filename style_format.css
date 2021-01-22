@@ -4,10 +4,12 @@
 
 #Kershaw{
     color: royalblue;
+    font-size: 14px;
+    font-family: 'Lora', serif;
 }
 
 *{
-    text-align: left; /* This will center all text on the webpage */
+    text-align: justify; /* This will center all text on the webpage */
 }
 
 b {
@@ -24,25 +26,7 @@ p {
     display: inline;
     position: static;
     font-family: 'Lora', serif;
-    /*
-    flex-grow: 2;
-    flex-shrink: 2;
-    flex-basis: auto;
-    */
 }
-
-
-.flex-container{
-    flex-grow: 2;
-    flex-shrink: 2;
-    flex-basis: auto;
-}
-
-.grid-containter{
-
-}
-
-
 
 h1 {
     font-size: 4rem;
@@ -105,10 +89,6 @@ img.border{
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
 }
 
 body{
@@ -117,6 +97,6 @@ body{
 
 @media screen and (min-width: 800px){
     body{
-        background-color: burlywood;
+        background-color: rgb(185, 184, 184);
     }
 }
